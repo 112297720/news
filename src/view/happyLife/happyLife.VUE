@@ -111,6 +111,7 @@
     Button,
     Popup,
     Loading,
+    Toast,
     List,
     Swipe,
     SwipeItem,
@@ -162,6 +163,7 @@
       [Col.name]: Col,
       [Popup.name]: Popup,
       [Loading.name]: Loading,
+      [Toast.name]: Toast,
       [List.name]: List,
       [Swipe.name]: Swipe,
       [SwipeItem.name]: SwipeItem,
@@ -173,8 +175,8 @@
       [Field.name]: Field
     },
     created() {
+      // this.$toast.loading({ mask: true, message: '加载中...',duration:0 });
       this.initList();
-
     },
     mounted() {
       this.comment = this.cList.length;
@@ -183,6 +185,9 @@
       setTimeout(() => {
         this.loadingShow = false;
       }, 400);
+      // setTimeout(() => {
+      //   this.$toast.clear();
+      // }, 400);
     },
     methods: {
       onPublish(){

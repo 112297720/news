@@ -208,7 +208,8 @@
     GoodsAction,
     GoodsActionBigBtn,
     GoodsActionMiniBtn,
-    Loading
+    Loading,
+    Toast
   } from "vant";
   import wx from 'weixin-js-sdk';
   import sha1 from 'sha1';
@@ -220,7 +221,7 @@
         scroll2: 0,
         scroll3: 0,
         scroll4: 0,
-        loadingShow: true, //加载显示
+        loadingShow: false, //加载显示
         list1: [], //列表1数据
         list2: [], //列表2数据
         list3: [], //列表3数据
@@ -322,10 +323,12 @@
       [GoodsActionBigBtn.name]: GoodsActionBigBtn,
       [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
       [Field.name]: Field,
-      [Loading.name]: Loading
+      [Loading.name]: Loading,
+      [Toast.name]: Toast
     },
     created() {
       // this.getHotNew();//热门
+      this.$toast.loading({ mask: true, message: '加载中...',duration:0 });
       this.initList(4, 0);
       this.initList(2, 1);
       this.initList(0, 2);
@@ -356,6 +359,9 @@
     updated() {
       setTimeout(() => {
         this.loadingShow = false;
+      }, 400);
+      setTimeout(() => {
+        this.$toast.clear();
       }, 400);
       if (!this.popShow) {
         this.isPlay = false;
