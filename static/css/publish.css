@@ -1,0 +1,283 @@
+.scIcon.van-icon.van-icon-photograph {
+  font-size: .45rem;
+  top: .1rem;
+}
+
+.uploadInfo {
+  font-size: 2rem;
+  line-height: .1rem;
+  background-color: #fff;
+}
+
+.subCol.van-col {
+  width: 100%;
+}
+
+.uploader.van-uploader {
+  width: 33%;
+}
+
+.preview {
+  padding: .25rem .25rem 0rem .25rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.imgView {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoView {
+  width: 100%;
+}
+
+.videoCol {
+  height: auto !important;
+}
+
+.imgCol.van-col {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 2.22rem;
+  background-clip: content-box;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+.itemClear.van-icon.van-icon-clear {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  font-size: .4rem;
+  margin-left: 25%;
+  margin-top: -.15rem;
+  border: .04rem solid #fff;
+  border-radius: 1rem;
+  /* text-shadow: 0 0 .4rem #fff; */
+}
+
+/* .van-loading--white {
+  border-radius: 0px; */
+  /* background-color: rgba(0, 0, 0, .5); */
+  /* position: absolute;
+  z-index: 2000;
+  padding: 45vh 43.3vw;
+} */
+
+.loading {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+}
+.topmsg {
+  color: #fff;
+  text-align: center;
+  margin-top: 100%;
+  width: 100%;
+  height: 100%;
+  margin-top: 55vh;
+}
+
+.videoBg {
+  width: 100%;
+  height: 100%;
+  background-color: #d2d2d2;
+  border: 0 solid #fff;
+}
+
+.videoName {
+  position: absolute;
+  width: 93%;
+  margin-top: .5rem;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+.post {
+  background-color: #fff;
+  border-radius: .1rem;
+  margin: .25rem .25rem;
+  box-shadow: 0 .03rem .2rem 0 rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: 0 .03rem .2rem 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.post:active {
+  background-color: #f5f5f5;
+  ;
+}
+
+.postView {
+  min-height: 1.8rem;
+}
+
+.pheadImg {
+  position: absolute;
+  margin-top: .3rem;
+  margin-left: .3rem;
+  height: .8rem;
+  width: .8rem;
+  object-fit: cover;
+  border-radius: .1rem;
+}
+
+.pnickName {
+  margin-left: 1.3rem;
+  font-size: .3rem;
+  padding-top: .4rem;
+  color: #333;
+  font-weight: bold;
+  width: 55%;
+  margin-top: .05rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pcommInfo {
+  /* letter-spacing: 1px; */
+  font-size: .32rem;
+  /* font-weight: 700; */
+  line-height: .48rem;
+  color: #333;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  margin-top: .6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+.pInfo {
+  letter-spacing: 1px;
+  font-size: .34rem;
+  /* font-weight: 700; */
+  line-height: .6rem;
+  color: #333;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  margin-top: .5rem;
+  padding-bottom: .3rem;
+}
+
+.postImgs {
+  margin-left: .3rem;
+  margin-top: .2rem;
+}
+
+.postImg {
+  width: 31%;
+  margin-right: .11rem;
+  height: 2.1rem;
+  object-fit: cover;
+  border-radius: .05rem;
+}
+
+.pImg {
+  width: 100%;
+  padding: 0 0 .5rem 0;
+}
+
+.swipeImg {
+  width: 100%;
+  height: 3rem;
+  object-fit: cover;
+  padding: .25rem .25rem .4rem .25rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  pointer-events: none;
+}
+
+.swipeTitleDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.swipeTitle {
+  letter-spacing: 1px;
+  margin: 2.8rem .25rem 0 .25rem;
+  margin-top: 2.6rem;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .7), rgba(255, 255, 255, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(255, 255, 255, 0));
+  height: 1rem;
+  line-height: 1.3rem;
+  padding: 0 .25rem;
+  font-size: .34rem;
+  color: #fff;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viewCount {
+  font-size: .36rem;
+  padding-top: .18rem;
+  padding-bottom: .13rem;
+  padding-left: .25rem;
+  color: #a6acc1;
+}
+
+.postInfo {
+  width: 100%;
+  background-color: #fff;
+  /* min-height: calc(100vh - .95rem); */
+  min-height: 30vh;
+  margin-top: -.05rem;
+}
+
+.pswp {
+  z-index: 9999999;
+}
+.headerImg{
+  width: 100%;
+}
+.topBar {
+  width: 100%;
+  position: absolute;
+  background-color: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, .2));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 0, 0,.2));
+  height: 1rem;
+}
+.remind.van-popup.van-popup--top{
+  color: #fff;
+  width: 100%;
+  font-size: .32rem;
+  font-weight: 700;
+  border-radius: 0;
+  padding: .3rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.van-submit-bar__bar{
+  box-shadow: 0 .001rem .1rem .01rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 .001rem .1rem .01rem rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+  height: 1rem !important;
+}
+button.van-button.van-button--danger.van-button--normal{
+  width:50% !important;
+  font-size: .3rem;
+}
+.goBack{
+  color: #878787;
+  padding-left: .1rem;
+  font-size: .3rem;
+}

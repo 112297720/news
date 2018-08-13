@@ -1,0 +1,278 @@
+  /* 可以设置不同的进入和离开动画 */
+
+  /* 设置持续时间和动画函数 */
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    /*清除内外边距*/
+  }
+
+  body {
+    background-color: #ECEDF1;
+    font-size: .3rem;
+  }
+
+  ul {
+    list-style: none;
+    /*去掉列表样式小点*/
+  }
+
+  .van-tabbar {
+    box-shadow: 0 .001rem .2rem .01rem rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 .001rem .2rem .01rem rgba(0, 0, 0, 0.2);
+  }
+
+  .van-tabbar-item--active {
+    color: #f44 !important;
+  }
+
+  /* .van-tabbar-item__text {
+    font-weight: 700;
+  } */
+
+  .van-tabs--line .van-tabs__wrap {
+    height: .95rem !important;
+  }
+
+  .van-tabs--line {
+    padding-top: .95rem !important;
+  }
+
+  .van-tab {
+    line-height: 1rem !important;
+  }
+
+  .van-tabbar {
+    height: .95rem !important;
+  }
+
+  .van-tabbar-item__icon {
+    margin-bottom: .03rem !important;
+  }
+
+  .van-tabbar-item__icon img {
+    height: .35rem !important;
+    width: .35rem !important;
+  }
+
+  .van-tabbar-item {
+    font-size: .15rem !important;
+    color: #878787;
+    font-weight: 700;
+  }
+
+  .van-tabs__line {
+    background-color: #fff !important;
+    height: .06rem !important;
+    /* border-radius: 1rem; */
+    /* margin-bottom: .1rem; */
+  }
+
+  .van-tabs__wrap {
+    box-shadow: 0 .05rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow: 0 .05rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .van-tabs__nav {
+    /* background-color: #f44 !important; */
+    /* background: -webkit-linear-gradient(left, #f44 50%,#fa983a); */
+    /* background: linear-gradient(to right,#f44 50%,#fa983a); */
+    background: -webkit-linear-gradient(45deg, #ff3f34, #ff793f);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(45deg, #ff3f34 #ff793f);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(45deg, #ff3f34 #ff793f);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(45deg, #ff3f34, #ff793f);
+    /* 标准的语法 */
+    /* width: 90vw; */
+  }
+
+  .van-tab.van-tab--active {
+    color: #fff !important;
+  }
+
+  .van-tab {
+    font-weight: 700 !important;
+    background-color: transparent !important;
+    font-size: .3rem !important;
+    color: rgba(255, 255, 255, .7) !important;
+    /* min-width: 1.7rem; */
+  }
+
+  .van-tab__pane {
+    min-height: calc(100vh - .95rem - .95rem);
+    background-color: #fff;
+    -webkit-animation: show 350ms ease-out forwards 1;
+    animation: show 350ms ease-out forwards 1;
+  }
+
+  .van-tab:active {
+    background-color: transparent !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+  }
+
+  .footer {
+    height: 1.5rem;
+    background-color: transparent;
+  }
+
+  .searchBox {
+    height: .95rem;
+    text-align: center;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(45deg, #ff3f34, #ff793f);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(45deg, #ff3f34 #ff793f);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(45deg, #ff3f34 #ff793f);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(45deg, #ff3f34, #ff793f);
+    /* 标准的语法 */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    box-shadow: 0 .05rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow: 0 .05rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+    /* background: #f44; */
+  }
+
+  .publishBtn.van-icon.van-icon-edit {
+    float: right;
+    margin-right: .1rem;
+    font-size: .35rem;
+    top:30%;
+  }
+  .publishP{
+    float: right;
+    margin-right: .25rem;
+    font-size: .3rem;
+    color: #fff;
+    line-height: 1rem;
+    font-weight: 700;
+    z-index: auto;  
+  }
+
+  .pageTitle {
+    font-size: .36rem;
+    font-weight: 700;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top,#efd100 0,#e2a233 38%,#f0c328 60%,#fff1a3 86%,#ffe13e 100%);
+    color: #f8b700; */
+    /* background-size: .3rem .3rem; */
+    color: #fff;
+    line-height: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    letter-spacing: 1px;
+    width: 40%;
+  }
+
+  .loadingShow {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: calc(50vh - .5rem) calc(50vw - .5rem);
+    /* background-color: rgba(0,0,0,.7) */
+    background-color: #fff;
+  }
+  .van-loading--black circle {
+    stroke: #f44 !important;
+}
+
+  .van-loading__circular circle {
+    stroke-width: 4px !important;
+  }
+
+  .right-return-top {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1.2rem;
+  }
+
+  .return-top {
+    width: .63rem;
+    height: .63rem;
+    z-index: 9;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 .01rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+    -webkit-box-shadow: 0 .01rem .05rem 0 rgba(0, 0, 0, 0.2) !important;
+    border-radius: 1rem;
+    /* -webkit-animation: show 350ms ease-out forwards 1;
+    animation: show 350ms ease-out forwards 1; */
+  }
+
+  .return-top img {
+    width: .63rem;
+    height: .63rem;
+  }
+
+  /* @-webkit-keyframes show {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    25% {
+      opacity: .5;
+      -webkit-transform: rotate(-3deg) translateY(-.2rem);
+    }
+    75% {
+      -webkit-transform: rotate(3deg);
+    }
+    100% {
+      opacity: .9;
+      -webkit-transform: rotate(0deg);
+    }
+  }
+
+  @keyframes show {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      opacity: .5;
+      transform: rotate(-3deg) translateY(-.2rem);
+    }
+    75% {
+      transform: rotate(3deg);
+    }
+    100% {
+      opacity: .9;
+      transform: rotate(0deg);
+    }
+  } */
+
+  @-webkit-keyframes show {
+    from {
+      opacity: .2;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes show {
+    from {
+      opacity: .2;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

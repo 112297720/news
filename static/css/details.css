@@ -1,0 +1,315 @@
+  h2 {
+    font-size: .45rem;
+  }
+
+  .tip {
+    line-height: .65rem;
+    font-size: .25rem;
+    color: #a6acc1;
+    padding-left: .25rem;
+    background-color: #ECEDF1;
+  }
+
+  .contentBox {
+    min-height: 5rem;
+    padding: .5rem .25rem .5rem .25rem;
+    color: #333;
+    position: relative;
+    background-color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contentBox p {
+    text-indent: 0em !important;
+  }
+
+  .name {
+    color: #9c9c9c;
+    font-size: .25rem;
+    padding: .2rem 0;
+  }
+
+  .contents {
+    font-size: .34rem !important;
+    line-height: .6rem;
+    color: #333;
+  }
+  .contents p span {
+    font-size: .34rem !important;
+  }
+
+  .contents img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .news {
+    height: 2rem;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .comm {
+    height: auto;
+    position: relative;
+    min-height: 2.3rem;
+  }
+
+  .newsTitle {
+    /* letter-spacing: 1px; */
+    margin-left: .25rem;
+    line-height: .45rem;
+    font-size: .34rem;
+    padding-top: .15rem;
+    color: #333;
+    /* font-weight: 700; */
+    width: 60%;
+    float: left;
+    margin-top: .05rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+  }
+
+  .nickName {
+    margin-left: 1.3rem;
+    font-size: .34rem;
+    padding-top: .375rem;
+    color: #333;
+    font-weight:bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .detailImg {
+    position: absolute;
+    top: .22rem;
+    right: 0;
+    margin-right: .25rem;
+    height: 1.5rem;
+    width: 2rem;
+    object-fit: cover;
+    border-radius: .05rem;
+  }
+
+  .headImg {
+    position: absolute;
+    margin-top: .34rem;
+    left: 0;
+    margin-left: .25rem;
+    height: .8rem;
+    width: .8rem;
+    object-fit: cover;
+    border-radius: .1rem;
+  }
+
+  .date {
+    font-size: .25rem;
+    float: left;
+    position: absolute;
+    bottom: .2rem;
+    margin-left: .25rem;
+    color: #a6acc1;
+  }
+
+  .comm:active{
+    background-color: #f5f5f5;
+  }
+
+  .commDate {
+    font-size: .25rem;
+    position: relative;
+    float: left;
+    padding-top: .05rem;
+    margin-left: 1.3rem;
+    color: #a6acc1;
+  }
+
+  .commRnickName {
+    font-size: .25rem;
+    position: relative;
+    /* padding-top: .4rem; */
+    float: right;
+    margin-right: .25rem;
+    color: #a6acc1;
+  }
+
+  .commReply {
+    font-size: .25rem;
+    margin-right: .25rem;
+    float: right;
+    margin-top: -.4rem;
+    color: #a6acc1;
+  }
+
+  .commInfo {
+    /* letter-spacing: 1px; */
+    font-size: .32rem;
+    line-height: .48rem;
+    margin-left: 1.3rem;
+    margin-top: .5rem;
+    color: #333;
+    width: 80%;
+    padding-bottom: .25rem;
+   
+  }
+
+  .command {
+    background-color: #fff;
+  }
+
+  .sofa {
+    height: 1.5rem;
+    margin-top: .5rem;
+  }
+
+
+
+  figcaption {
+    width: 100% !important;
+  }
+
+  section {
+    width: auto !important;
+  }
+
+  .tcount {
+    font-size: .25rem;
+    float: left;
+    color: #999;
+  }
+
+
+  
+  .van-goods-action {
+    box-shadow: 0 .001rem .1rem .01rem rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 .001rem .1rem .01rem rgba(0, 0, 0, 0.1);
+    z-index: 9998 !important;
+    background-color: #fff !important;
+  }
+  .van-popup.van-popup--right{
+    width: 100%;
+    height: 100%;
+    /* background-color: #ECEDF1; */
+    background-color: #fff;
+    z-index: 2000 !important;
+  }
+  .van-popup.van-popup--bottom{
+    z-index: 9999 !important;
+  }
+
+  .van-goods-action-mini-btn::after {
+    border-width: 0 !important;
+  }
+
+  .van-button--bottom-action {
+    color: #878787 !important;
+    background-color: #fff !important;
+    text-align: left !important;
+    font-size: .25rem;
+    height: 1rem !important;
+    line-height: 1rem;
+  }
+
+  .commBtn .van-button__text {
+
+    padding: 0.2rem 2rem 0.2rem .4rem !important;
+    background-color: #f8f8f8 !important;
+    border-radius: 4rem !important;
+    margin:0 auto;
+  }
+
+  .van-goods-action-mini-btn:active {
+    background-color: #fff !important;
+  }
+
+  .van-button:active::before {
+    opacity: 0 !important;
+  }
+
+  .van-panel__footer {
+    text-align: right !important;
+  }
+
+  .van-button--small span {
+    padding: 0 !important;
+    background-color: #FF4444 !important;
+    border-radius: 0rem !important;
+  }
+
+  /* .van-cell__title {
+    font-size: .34rem !important;
+    font-weight: 700 !important;
+  }
+
+  .van-cell__value {
+    font-size: .25rem !important;
+    font-weight: 700 !important;
+  } */
+
+  /* .van-cell__value textarea {
+    font-size: .34rem !important;
+    font-weight: normal !important;
+    background-color: #FAFAFA !important;
+  } */
+
+  .van-cell:not(:last-child)::after {
+    border-bottom-width: 0 !important;
+  }
+
+  .van-hairline--top::after {
+    border-top-width: 0 !important;
+  }
+
+  .video-player {
+    margin: .25rem 0;
+  }
+
+  .van-nav-bar {
+    height: 1rem !important;
+    /* background: -webkit-linear-gradient(bottom, #B92927 , #C63A37);
+    background: linear-gradient(to top, #B92927 , #C63A37);   */
+    /* box-shadow: 0 .001rem .1rem 0 rgba(0, 0, 0, 0.1); */
+  }
+
+  .van-nav-bar__title {
+    letter-spacing: 1px;
+    color: #333 !important;
+    line-height: 1.1rem !important;
+    font-size: .38rem !important;
+    font-weight: 700 !important;
+  }
+
+  .van-nav-bar .van-icon {
+    color: #697A82 !important;
+    line-height: 1.06rem !important;
+    font-size: .4rem !important;
+  }
+  .van-goods-action-mini-btn{
+    height: 1rem !important;
+    font-size: .2rem !important;
+    color: #878787;
+  }
+  .van-icon.van-icon-arrow-left.van-goods-action-mini-btn__icon{
+    font-size:.34rem !important;
+  }
+  .van-icon.van-icon-chat.van-goods-action-mini-btn__icon{
+    font-size:.34rem !important;
+  }
+  .van-icon.van-icon-add-o.van-goods-action-mini-btn__icon{
+    font-size:.34rem !important;
+  }
+  .van-icon.van-icon-add.van-goods-action-mini-btn__icon{
+    color: #ff3f34; 
+    font-size:.34rem !important;
+  }
