@@ -26,7 +26,7 @@
             <van-list :immediate-check=false v-model="loading2" :finished="finished2" @load="getList(active,shTypeID)" loading-text='正在加载...'>
               <div v-if="active===0" v-for="(item, index) in list2" :key="index">
                 <div class='videoNew  van-hairline--bottom' @click="showPop(item.id,'shVideo')">
-                  <div v-lazy:background-image="item.image" class="topImg">
+                  <div v-lazy:background-image="item.image" class="videoImg">
                     <div class='opacityTop'></div>
                     <div class='opacitytextTop'>{{item.title}}</div>
                   </div>
@@ -59,7 +59,7 @@
             <van-list :immediate-check=false v-model="loading1" :finished="finished1" @load="getList(active,xbTypeID)" loading-text='正在加载...'>
               <div v-if="active===1" v-for="(item, index) in list1" :key="index">
                 <div class='videoNew van-hairline--bottom' @click="showPop(item.id,'xbVideo')">
-                  <div v-lazy:background-image="item.image" class="topImg">
+                  <div v-lazy:background-image="item.image" class="videoImg">
                     <div class='opacityTop'></div>
                     <div class='opacitytextTop'>{{item.title}}</div>
                   </div>

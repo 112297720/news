@@ -77,6 +77,7 @@
   height: 2rem;
   color: #b4b9cb;
   position: relative;
+  margin: 0 .25rem;
 }
 
 .content:active {
@@ -86,7 +87,6 @@
 .title {
   /* letter-spacing: 1px; */
   line-height: .45rem;
-  margin-left: .25rem;
   font-size: .32rem;
   padding-top: .15rem;
   color: #333;
@@ -104,7 +104,6 @@
 }
 
 .bottom {
-  margin-left: .25rem;
   font-size: .25rem;
 }
 
@@ -112,7 +111,6 @@
   float: left;
   position: absolute;
   bottom: .2rem;
-  margin-left: .25rem;
   color: #a6acc1;
 }
 
@@ -120,7 +118,6 @@
   position: absolute;
   top: .22rem;
   right: 0;
-  margin-right: .25rem;
   height: 1.5rem;
   width: 2rem;
   object-fit: cover;
@@ -142,13 +139,13 @@
 }
 
 .picNew {
-  padding: .25rem .25rem;
+  padding: .25rem 0;
   color: #333;
   z-index: auto;
 }
 
 .videoNew {
-  padding: .25rem .25rem .75rem .2rem;
+  padding: .25rem 0 .75rem 0;
   color: #333;
   z-index: auto;
 }
@@ -197,17 +194,27 @@
   font-weight: normal;
 }
 
+.videoImg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 4rem;
+  width: 100%;
+}
+
 .videoAuthor {
   color: #a6acc1;
   padding-top: .2rem;
   font-size: .25rem;
   font-weight: normal;
+  margin-left: .25rem;
   float: left;
 }
 
 .tagName {
   float: left;
-  margin-right: .25rem;
+  margin-left: .25rem;
   margin-top: .15rem;
   padding-top: .09rem !important;
   background: -webkit-linear-gradient(45deg, #ff3f34, #ff793f);
@@ -234,7 +241,7 @@
   margin: auto;
   left: 0;
   right: 0;
-  top: 0;
+  top: -.45rem;
   bottom: 0;
   width: 1rem !important;
   /* bottom: .9rem;
