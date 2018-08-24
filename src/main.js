@@ -1,4 +1,4 @@
-import '../src/common/rem';
+import '../src/utils/rem';
 import Vue from 'vue';
 import App from './App.vue';
 import {
@@ -7,7 +7,7 @@ import {
 import VueLazyload from 'vue-lazyload';
 import axios from 'axios';
 import VideoPlayer from 'vue-video-player'
-import * as filters from '../src/common/date';
+import * as filters from '../src/utils/date';
 import '../static/css/stytle.css';
 import 'video.js/dist/video-js.css';
 import 'vue-video-player/src/custom-theme.css';
