@@ -171,7 +171,6 @@
     GoodsActionBigBtn,
     GoodsActionMiniBtn,
     Loading,
-    Toast,
     Tag
   } from "vant";
   import wx from 'weixin-js-sdk';
@@ -332,11 +331,9 @@
       [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
       [Field.name]: Field,
       [Loading.name]: Loading,
-      [Toast.name]: Toast,
       [Tag.name]: Tag
     },
     created() {
-      this.$toast.loading({ mask: true, message: '加载中...',duration:0 });
       this.initList(0, this.xbTypeID); //西北视频，没分类
       this.initList(1, this.shTypeID); //石化视频，默认第一个分类
       this.shType[0].color = this.color_active;
@@ -362,9 +359,6 @@
     updated() {
       setTimeout(() => {
         this.loadingShow = false;
-      }, 400);
-      setTimeout(() => {
-        this.$toast.clear();
       }, 400);
       if (!this.popShow) {
         this.isPlay = false;

@@ -62,7 +62,8 @@
 <script>
   import {
     Tabbar,
-    TabbarItem
+    TabbarItem,
+    Toast
   } from "vant";
   export default {
     data() {
@@ -90,10 +91,18 @@
     },
     components: {
       [Tabbar.name]: Tabbar,
-      [TabbarItem.name]: TabbarItem
+      [TabbarItem.name]: TabbarItem,
+      [Toast.name]: Toast
     },
 
-    create() {},
+    created() {
+
+    },
+    updated() {
+      setTimeout(() => {
+        Toast.clear();
+      }, 1000);
+    },
     mounted() {
       this.getDevice();
       // history.pushState(null, null, document.title);
@@ -175,6 +184,13 @@
         // } else {
 
         // }
+        Toast({
+          type: 'loading',
+          mask: true,
+          loadingType: 'spinner',
+          message: '加载中...',
+          duration: 0
+        });
       }
     }
   };

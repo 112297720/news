@@ -5,9 +5,11 @@
     </transition>
     <div class='tab'>
       <van-tabs v-model="active" v-bind:line-width="60" @click="onClick" @change="onChange" swipeable sticky>
-        <van-tab  :title="tabs[0].title">
-          <van-pull-refresh v-show="active==0"  v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...' loading-text='正在刷新列表...'>
-            <van-list :immediate-check="false" v-model="loading1" :finished="finished1" @load="getList(tabs[active].menu_id,active)" loading-text='正在加载...'>
+        <van-tab :title="tabs[0].title">
+          <van-pull-refresh v-show="active==0" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...'
+            loading-text='正在刷新列表...'>
+            <van-list :immediate-check="false" v-model="loading1" :finished="finished1" @load="getList(tabs[active].menu_id,active)"
+              loading-text='正在加载...'>
               <div v-if="active==0" v-for="(item, index) in list1" :key="index">
                 <div class='topImg' v-lazy:background-image="item.pic1" v-if="index===0" @click="showPop(item.article_id,'news')">
                   <div class='opacity'>
@@ -26,9 +28,11 @@
           </van-pull-refresh>
           <div class='useless'></div>
         </van-tab>
-        <van-tab  :title="tabs[1].title">
-          <van-pull-refresh v-show="active==1" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...' loading-text='正在刷新列表...'>
-            <van-list :immediate-check="false"  v-model="loading2" :finished="finished2" @load="getList(tabs[active].menu_id,active)" loading-text='正在加载...'>
+        <van-tab :title="tabs[1].title">
+          <van-pull-refresh v-show="active==1" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...'
+            loading-text='正在刷新列表...'>
+            <van-list :immediate-check="false" v-model="loading2" :finished="finished2" @load="getList(tabs[active].menu_id,active)"
+              loading-text='正在加载...'>
               <div v-if="active==1" v-for="(item, index) in list2" :key="index">
                 <div class='topImg' v-lazy:background-image="item.pic1" v-if="index===0" @click="showPop(item.article_id,'news')">
                   <div class='opacity'>
@@ -47,9 +51,11 @@
           </van-pull-refresh>
           <div class='useless'></div>
         </van-tab>
-        <van-tab  :title="tabs[2].title">
-          <van-pull-refresh v-show="active==2" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...' loading-text='正在刷新列表...'>
-            <van-list :immediate-check="false"  v-model="loading3" :finished="finished3" @load="getList(tabs[active].menu_id,active)" loading-text='正在加载...'>
+        <van-tab :title="tabs[2].title">
+          <van-pull-refresh v-show="active==2" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...'
+            loading-text='正在刷新列表...'>
+            <van-list :immediate-check="false" v-model="loading3" :finished="finished3" @load="getList(tabs[active].menu_id,active)"
+              loading-text='正在加载...'>
               <div v-if="active==2" v-for="(item, index) in list3" :key="index">
                 <div class='topImg' v-lazy:background-image="item.cover" v-if="index===0" @click="goURL(item.content_url)">
                   <div class='opacity'>
@@ -68,9 +74,11 @@
           </van-pull-refresh>
           <div class='useless'></div>
         </van-tab>
-        <van-tab  :title="tabs[3].title">
-          <van-pull-refresh v-show="active==3" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...' loading-text='正在刷新列表...'>
-            <van-list :immediate-check="false"  v-model="loading4" :finished="finished4" @load="getList(tabs[active].menu_id,active)" loading-text='正在加载...'>
+        <van-tab :title="tabs[3].title">
+          <van-pull-refresh v-show="active==3" v-model="isLoading" @refresh="onRefresh(active)" pulling-text='↓下拉即可刷新...' loosing-text='↑松开即可刷新...'
+            loading-text='正在刷新列表...'>
+            <van-list :immediate-check="false" v-model="loading4" :finished="finished4" @load="getList(tabs[active].menu_id,active)"
+              loading-text='正在加载...'>
               <div v-if="active==3" v-for="(item, index) in list4" :key="index">
                 <div class='picNew van-hairline--bottom' @click="showPop(item.link_id,'topic',item.type,item.pic1,item.title)">
                   <div v-lazy:background-image="item.pic1" class="bigImg"></div>
@@ -208,8 +216,7 @@
     GoodsAction,
     GoodsActionBigBtn,
     GoodsActionMiniBtn,
-    Loading,
-    Toast
+    Loading
   } from "vant";
   import wx from 'weixin-js-sdk';
   import sha1 from 'sha1';
@@ -323,12 +330,10 @@
       [GoodsActionBigBtn.name]: GoodsActionBigBtn,
       [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
       [Field.name]: Field,
-      [Loading.name]: Loading,
-      [Toast.name]: Toast
+      [Loading.name]: Loading
     },
     created() {
       // this.getHotNew();//热门
-      this.$toast.loading({ mask: true, message: '加载中...',duration:0 });
       this.initList(4, 0);
       this.initList(2, 1);
       this.initList(0, 2);
@@ -348,8 +353,6 @@
       } else {
         this.getJsapi_ticket(this.pageUrl, this.shareTitle);
       }
-
-
     },
     mounted() {
       window.addEventListener('scroll', this.handleScroll);
@@ -359,9 +362,6 @@
     updated() {
       setTimeout(() => {
         this.loadingShow = false;
-      }, 400);
-      setTimeout(() => {
-        this.$toast.clear();
       }, 400);
       if (!this.popShow) {
         this.isPlay = false;

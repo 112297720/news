@@ -138,8 +138,7 @@
     GoodsAction,
     GoodsActionBigBtn,
     GoodsActionMiniBtn,
-    Loading,
-    Toast
+    Loading
   } from 'vant';
   import wx from 'weixin-js-sdk';
   import sha1 from 'sha1';
@@ -214,13 +213,10 @@
       [GoodsActionBigBtn.name]: GoodsActionBigBtn,
       [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
       [Field.name]: Field,
-      [Loading.name]: Loading,
-      [Toast.name]: Toast
+      [Loading.name]: Loading
     },
     created() {
-      this.$toast.loading({ mask: true, message: '加载中...',duration:0 });
       this.initList(1, 3);
-
       let url = window.location.href;
       if (url.indexOf("#") > -1) {
         url = url.split("#")[0];
@@ -244,9 +240,6 @@
     updated() {
       setTimeout(() => {
         this.loadingShow = false;
-      }, 400);
-      setTimeout(() => {
-        this.$toast.clear();
       }, 400);
     },
     methods: {
