@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 3.6rem;
+  height: 4.2rem;
   width: 100%;
 }
 
@@ -200,7 +200,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 4rem;
+  height: 4.2rem;
   width: 100%;
 }
 
@@ -242,7 +242,7 @@
   margin: auto;
   left: 0;
   right: 0;
-  top: -.45rem;
+  top: -.5rem;
   bottom: 0;
   width: 1rem !important;
   /* bottom: .9rem;
